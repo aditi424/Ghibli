@@ -1,16 +1,17 @@
 import { FaWhatsapp } from "react-icons/fa";
+import chihiroImage from '../assets/chihiro.png';
 
 const Navbar = () => {
   return (
     <nav className="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-3">
           <img 
-            src="https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" 
-            alt="Logo" 
-            className="w-10 h-10 rounded-full object-cover"
+            src={chihiroImage}
+            alt="Chihiro from Spirited Away" 
+            className="w-12 h-12 object-cover"
           />
-          <span className="font-heading text-xl text-primary">Ghibli Art</span>
+          <span className="font-heading text-xl text-primary">Ghibli Transform</span>
         </div>
         <div className="hidden md:flex space-x-6 font-medium">
           <a href="#transformations" className="hover:text-primary transition">Gallery</a>
