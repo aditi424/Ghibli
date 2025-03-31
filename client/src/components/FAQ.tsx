@@ -22,14 +22,6 @@ const FAQ = () => {
     {
       question: "How do I pay for the transformation?",
       answer: "After sending your photo, we'll provide payment instructions through WhatsApp. We accept UPI, PayTM, PhonePe, and other major digital payment methods. Once payment is confirmed, we begin the transformation process."
-    },
-    {
-      question: "Can I request specific Ghibli movie styles?",
-      answer: "Absolutely! You can specify if you want your image to match the style of a particular Studio Ghibli film like Spirited Away, Howl's Moving Castle, My Neighbor Totoro, or Princess Mononoke. This helps us tailor the transformation to your preferences."
-    },
-    {
-      question: "Do you offer bulk discounts?",
-      answer: "Yes! We offer special packages: ₹49 for 3 images, ₹79 for 5 images, and ₹149 for 10 images. For larger requirements, please contact us on WhatsApp for custom pricing."
     }
   ];
 
@@ -90,25 +82,6 @@ const FAQ = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-center mt-10"
-        >
-          <p className="text-foreground/70">
-            Still have questions? 
-            <a 
-              href="https://wa.me/7353455185?text=Hi,%20I%20have%20a%20question%20about%20the%20Ghibli%20transformation%20service." 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-primary font-medium ml-1 hover:underline"
-            >
-              Contact us on WhatsApp
-            </a> and we'll be happy to help!
-          </p>
         </motion.div>
       </div>
     </section>
