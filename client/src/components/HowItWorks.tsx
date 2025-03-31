@@ -11,7 +11,7 @@ const HowItWorks = () => {
     {
       icon: <FaCreditCard className="text-2xl text-primary" />,
       title: "2. Quick Payment",
-      description: "Make a simple payment of ₹19 via UPI, PayTM, or Google Pay."
+      description: "Make a simple payment of ₹19 via UPI, PhonePe, or Google Pay."
     },
     {
       icon: <FaMagic className="text-2xl text-primary" />,

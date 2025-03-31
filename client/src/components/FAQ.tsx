@@ -21,7 +21,7 @@ const FAQ = () => {
     },
     {
       question: "How do I pay for the transformation?",
-      answer: "After sending your photo, we'll provide payment instructions through WhatsApp. We accept UPI, PayTM, PhonePe, and other major digital payment methods. Once payment is confirmed, we begin the transformation process."
+      answer: "After sending your photo, we'll provide payment instructions through WhatsApp. We accept UPI, PhonePe, and Google Pay. Once payment is confirmed, we begin the transformation process."
     }
   ];
 
