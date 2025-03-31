@@ -32,3 +32,6 @@ Thumbs.db
 
 # Vercel
 .vercel
+
+# GitHub Pages deployment folder
+node_modules/.cache/gh-pages

@@ -2,11 +2,14 @@
   "name": "ghibli-transform-client",
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://username.github.io/ghibli-transform",
   "scripts": {
     "dev": "vite",
     "prebuild": "node build-vercel.js",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",

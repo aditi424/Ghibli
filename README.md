@@ -18,6 +18,28 @@ A beautiful web application that transforms your photos into Studio Ghibli-inspi
 
 ## Deployment Instructions
 
+### Deploying to GitHub Pages
+
+1. Fork or clone this repository to your GitHub account
+2. Update the following values in your forked repository:
+   - In `client/package.json`: Change `homepage` to match your GitHub username and repository name: 
+     ```json
+     "homepage": "https://yourusername.github.io/yourrepo",
+     ```
+   - In `client/vite.config.js`: Update the `base` path to match your repository name:
+     ```js
+     base: '/yourrepo/',
+     ```
+3. Push your changes to the main branch
+4. GitHub Actions will automatically build and deploy your site to GitHub Pages
+5. Your site will be available at `https://yourusername.github.io/yourrepo`
+
+Alternatively, you can manually deploy with:
+```bash
+cd client
+npm run deploy
+```
+
 ### Deploying to Vercel
 
 1. Fork or clone this repository to your GitHub account
