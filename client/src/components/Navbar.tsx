@@ -1,5 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
-import chihiroImage from '../assets/chihiro.png';
+import chihiroImage from '../assets-vercel/chihiro.png';
 
 const Navbar = () => {
   return (

@@ -1,5 +1,5 @@
 {
-  "buildCommand": "./vercel-build.sh",
+  "buildCommand": "cp -r attached_assets/* client/public/ 2>/dev/null || : && cp client/src/components/Navbar-vercel.tsx client/src/components/Navbar.tsx && cd client && npm install && npm run build",
   "outputDirectory": "client/dist",
   "framework": "vite",
   "rewrites": [

@@ -26,7 +26,7 @@ A beautiful web application that transforms your photos into Studio Ghibli-inspi
 4. Configure the project with the following settings:
    - Framework Preset: Vite
    - Root Directory: ./
-   - Build Command: ./vercel-build.sh (uses our custom build script)
+   - The buildCommand in vercel.json will handle all necessary steps
    - Output Directory: client/dist
 5. Click "Deploy"
 
