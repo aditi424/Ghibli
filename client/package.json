@@ -2,7 +2,7 @@
   "name": "ghibli-transform-client",
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://username.github.io/ghibli-transform",
+  "homepage": "https://aditi424.github.io/Ghiblii",
   "scripts": {
     "dev": "vite",
     "prebuild": "node build-vercel.js",
