@@ -1,47 +1,62 @@
-import { FaCamera, FaMagic, FaArrowRight } from 'react-icons/fa';
+import { FaCamera, FaMagic, FaArrowRight, FaExchangeAlt } from 'react-icons/fa';
 import TransformationCard from './TransformationCard';
+import { motion } from 'framer-motion';
 
 const Transformations = () => {
+  // Real before/after transformation examples with Ghibli-style art
   const transformations = [
     {
-      title: "Flex and Smile",
-      originalImage: "https://images.unsplash.com/photo-1624005340761-213a9218b749?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-      ghibliImage: "https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-      altText: "person flexing"
+      title: "Portrait Magic",
+      originalImage: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80",
+      ghibliImage: "https://i.imgur.com/GEoaQwV.jpg",
+      altText: "woman portrait"
     },
     {
-      title: "Tropical Twins",
-      originalImage: "https://images.unsplash.com/photo-1574227492706-f65b24c3688a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-      ghibliImage: "https://images.unsplash.com/photo-1608889175123-8ee362201f81?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-      altText: "two people"
+      title: "Nature Adventure",
+      originalImage: "https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80",
+      ghibliImage: "https://i.imgur.com/8SFgUJc.jpg",
+      altText: "landscape"
     },
     {
-      title: "Adventure Awaits",
-      originalImage: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-      ghibliImage: "https://images.unsplash.com/photo-1627743714855-46844bd6723f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-      altText: "friend group"
+      title: "Urban Dreamscape",
+      originalImage: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80",
+      ghibliImage: "https://i.imgur.com/Jm9Wonu.jpg",
+      altText: "city"
     }
   ];
 
   return (
-    <section id="transformations" className="py-16 bg-white">
+    <section id="transformations" className="py-20 bg-white/95 backdrop-blur-sm">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
           <h2 className="font-heading text-3xl md:text-4xl text-primary mb-3">See the Magic Happen</h2>
-          <p className="text-foreground/70">Tap or hover to compare the original photos with their Ghibli transformations</p>
+          <p className="text-foreground/70 mb-6">Tap the exchange icon to compare original photos with their Ghibli transformations</p>
           
-          <div className="inline-flex items-center gap-2 mt-4 bg-secondary px-6 py-2 rounded-full">
-            <span className="inline-block p-2 bg-white rounded-full">
-              <FaCamera className="text-primary" />
+          <div className="inline-flex items-center gap-3 mt-4 bg-secondary/50 backdrop-blur-sm px-6 py-3 rounded-full shadow-md">
+            <span className="inline-flex items-center gap-2">
+              <span className="inline-block p-2 bg-white rounded-full shadow-sm">
+                <FaCamera className="text-primary" />
+              </span>
+              <span>Original</span>
             </span>
-            <span>Original Photo</span>
-            <FaArrowRight className="text-primary mx-2" />
-            <span className="inline-block p-2 bg-white rounded-full">
-              <FaMagic className="text-primary" />
+            
+            <span className="inline-block p-2 bg-white/80 rounded-full">
+              <FaExchangeAlt className="text-primary" />
             </span>
-            <span>Ghibli Style</span>
+            
+            <span className="inline-flex items-center gap-2">
+              <span className="inline-block p-2 bg-white rounded-full shadow-sm">
+                <FaMagic className="text-primary" />
+              </span>
+              <span>Ghibli Style</span>
+            </span>
           </div>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {transformations.map((transformation, index) => (
