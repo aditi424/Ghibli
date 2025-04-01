@@ -1,0 +1,23 @@
+{
+  "name": "Ghibli",
+  "version": "1.0.0",
+  "type": "module",
+  "homepage": "https://aditi424.github.io/Ghibli",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node build-vercel.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.4.0",
+    "framer-motion": "^11.18.2",
+    "wouter": "^3.3.5",
+    "tailwind-merge": "^2.5.4",
+    "clsx": "^2.1.1"
+  }
+}
