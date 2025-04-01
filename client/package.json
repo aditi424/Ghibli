@@ -1,8 +1,8 @@
 {
-  "name": "Ghiblii",
+  "name": "Ghibli",
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://aditi424.github.io/Ghiblii",
+  "homepage": "https://aditi424.github.io/Ghibli",
   "scripts": {
     "dev": "vite",
     "prebuild": "node build-vercel.js",

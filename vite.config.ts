@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig({
-  base: "/Ghiblii/", // Ensure this matches your repo name
+  base: "/Ghibli/", // Ensure this matches your repo name
   plugins: [react()], // Removed Replit-specific plugins
   resolve: {
     alias: {

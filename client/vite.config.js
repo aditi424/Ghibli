@@ -11,7 +11,7 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, 'public/images'),
     },
   },
-  base: "/Ghiblii/", // Change this to your repository name
+  base: "/Ghibli/", // Change this to your repository name
   build: {
     outDir: 'dist',
     emptyOutDir: true,
