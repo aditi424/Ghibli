@@ -11,7 +11,7 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, 'public/images'),
     },
   },
-  base: '/ghibli-transform/', // Change this to your repository name
+  base: "/Ghiblii/", // Change this to your repository name
   build: {
     outDir: 'dist',
     emptyOutDir: true,
