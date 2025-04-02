@@ -52,7 +52,7 @@ npm run deploy
    - Output Directory: client/dist
 5. Click "Deploy"
 
-The WhatsApp functionality is configured to direct messages to the number 73534##### with a predefined message. This will work automatically after deployment.
+The WhatsApp functionality is configured to direct messages to the number you specify with a predefined message. This will work automatically after deployment.
 
 ## Local Development
 
