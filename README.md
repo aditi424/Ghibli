@@ -1,4 +1,4 @@
-# WhatsApp Ghibli Transform
+# Ghibli Transform
 
 A beautiful web application that transforms your photos into Studio Ghibli-inspired artwork with easy WhatsApp integration.
 
